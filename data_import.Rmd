@@ -5,6 +5,7 @@ output: github_document
 
 ```{r}
 library(tidyverse)
+library(readxl)
 ```
 
 ## Read in some data
@@ -17,4 +18,12 @@ litters_df = janitor::clean_names(litters_df)
 litters_df
 ```
 
-## take a look at the data
+## other file formats
+
+excel
+
+```{r}
+mlb_df = read_excel("./data/mlb11.xlsx")
+mlb_df
+```
+
